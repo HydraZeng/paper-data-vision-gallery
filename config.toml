@@ -5,6 +5,7 @@ Paginate = 1000
 googleAnalytics = ""
 theme = "showcase"
 disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
+publishDir = "docs"
 
 [params]
   author = "Chaoliang Zeng"

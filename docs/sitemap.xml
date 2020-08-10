@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://sing.cse.ust.hk/bars/bar1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sing.cse.ust.hk/lines/broken-line1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sing.cse.ust.hk/lines/broken-line2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sing.cse.ust.hk/lines/cdf1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sing.cse.ust.hk/lines/cdf2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sing.cse.ust.hk/lines/cdf3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sing.cse.ust.hk/bars/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sing.cse.ust.hk/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sing.cse.ust.hk/lines/</loc>
+  </url>
+  
+</urlset>
