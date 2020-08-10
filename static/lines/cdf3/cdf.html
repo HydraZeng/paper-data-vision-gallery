@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-light">
+        <p><img src="./cdf.png" alt="CDF"></p>
+<p><strong>Language:</strong> python3</p>
+<pre><code class="language-phthon3"><code><div>import matplotlib.pyplot as plt
+import numpy as np
+
+plt.figure(figsize=(10,7))
+
+plt.xlim([0, 400.1])
+plt.ylim([0, 1.00001])
+
+y1, x1 = np.loadtxt('fct_noaeolus_30kb.txt', unpack=True)
+plt.plot(x1,y1, label='ExpressPass',linestyle='--',linewidth=6.0)
+y2, x2 = np.loadtxt('fct_aeolus_30kb.txt', unpack=True)
+plt.plot(x2,y2, label='ExpressPass + Aeolus',linewidth=6.0)
+
+plt.xticks(fontsize=28)
+plt.yticks(fontsize=28)
+plt.xticks(np.arange(0, 400.1, 100))
+plt.yticks(np.arange(0, 1.00001, 0.2))
+plt.xlabel('MCT (us)',fontsize=28, fontweight='bold')
+plt.ylabel('CDF',fontsize=28, fontweight='bold')
+plt.legend(fontsize=24,loc=4)
+plt.grid()
+
+plt.show()
+</div></code></code></pre>
+
+    </body>
+    </html>

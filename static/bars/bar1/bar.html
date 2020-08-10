@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-light">
+        <p><img src="./bar.png" alt="Bar"></p>
+<p><strong>Language:</strong> python3</p>
+<pre><code class="language-phthon3"><code><div>import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.ticker as ticker
+
+
+fig = plt.figure(figsize=(10,7))
+ax = fig.add_subplot(111)
+
+ind = np.arange(3)
+A = [140, 180, 220] # fake data here
+B = [90, 140, 160] # fake data here
+
+w = 0.3
+ax.bar(ind-w/2, A, width=w, hatch='+', label='ExpressPass')
+ax.bar(ind+w/2, B, width=w, hatch='x',label='ExpressPass + Aeolus')
+
+ax.set_xticks(ind)
+ax.set_xticklabels( ('30KB', '40KB', '50KB') )
+
+plt.ylim([0, 300.01])
+plt.xticks(fontsize=28)
+plt.yticks(fontsize=28)
+plt.yticks(np.arange(0, 350.00001, 100))
+plt.ylabel('Mean MCT (us)',fontsize=28, fontweight='bold')
+plt.xlabel('Message Size',fontsize=28, fontweight='bold')
+plt.legend(fontsize=25, loc = 2)
+plt.grid()
+
+plt.show()
+</div></code></code></pre>
+
+    </body>
+    </html>

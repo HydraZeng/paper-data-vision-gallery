@@ -1,0 +1,19 @@
+baseURL = "http://sing.cse.ust.hk/"
+languageCode = "en-us"
+title = "Data Vision Gallery"
+Paginate = 1000
+googleAnalytics = ""
+theme = "showcase"
+disableKinds = ["taxonomy", "taxonomyTerm", "RSS"]
+
+[params]
+  author = "Chaoliang Zeng"
+  description = "Scientific data figure gallery"
+  message = "Gallery"
+  hideAutoMenu = false
+
+[[menu.main]]
+  name = "iSING"
+  url = "http://sing.cse.ust.hk/"
+
+[social]

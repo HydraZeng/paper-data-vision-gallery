@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-light">
+        <p><img src="./broken-line.png" alt="Broken Line"></p>
+<p><strong>Language:</strong> python3</p>
+<pre><code class="language-phthon3"><code><div>import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.ticker as ticker
+
+
+plt.figure(figsize=(13,7))
+ax = plt.gca()
+ax.yaxis.set_major_formatter(ticker.PercentFormatter(xmax=1))
+
+linkspeed = np.array([&quot;1Gbps&quot;, &quot;10Gbps&quot;, &quot;100Gbps&quot;])
+plt.xticks(range(3), linkspeed, fontweight='bold')
+plt.ylim([0, 1.00001])
+plt.xlim([-0.5, 2.5])
+
+y1 = np.loadtxt('fctWebServer.txt', delimiter=' ', unpack=True)
+plt.plot(y1, label='Web Server', marker='o', markersize=18, linestyle= '-', linewidth=7.0)
+
+y2 = np.loadtxt('fctCacheFollower.txt', delimiter=' ', unpack=True)
+plt.plot(y2, label='Cache Follower', marker='p', markersize=18, linestyle= '--', linewidth=7.0)
+
+y3 = np.loadtxt('fctWebSearch.txt', delimiter=' ', unpack=True)
+plt.plot(y3, label='Web Search', marker='^', markersize=18, linestyle= '-.',linewidth=7.0)
+
+y4 = np.loadtxt('fctDataMining.txt', delimiter=' ', unpack=True)
+plt.plot(y4, label='Data Mining', marker='s', markersize=18, linestyle= ':',linewidth=7.0)
+
+plt.xticks(fontsize=28)
+plt.yticks(fontsize=28)
+plt.ylabel('% flows finish in the 1st  RTT',fontsize=28, fontweight='bold')
+plt.legend(fontsize=23, loc = 2)
+plt.grid()
+plt.show()
+</div></code></code></pre>
+
+    </body>
+    </html>
