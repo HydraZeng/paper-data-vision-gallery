@@ -1,4 +1,4 @@
-baseURL = "http://sing.cse.ust.hk/"
+baseURL = "https://hydrazeng.github.io/paper-data-vision-gallery/"
 languageCode = "en-us"
 title = "Data Vision Gallery"
 Paginate = 1000
