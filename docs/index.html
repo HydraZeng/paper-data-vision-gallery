@@ -80,6 +80,11 @@
         >Lines</a
       >
       
+      <a
+        class="mr-2 px-2 rounded cursor-pointer select-none hover:text-gray-900 filter-networkings"
+        >Networkings</a
+      >
+      
       
       <a
       href="http://sing.cse.ust.hk/"
@@ -298,6 +303,39 @@
       </a>
       
       
+      
+      <a
+        target="_blank"
+        rel="noopener"
+        href="./networkings/topology1/topology.html"
+        class="card p-4 md:w-1/3 sm:mb-4 mb-6 hover:shadow-xl hover:bg-gray-400 transition duration-200 ease-in rounded-lg networkings"
+      >
+        <div class="rounded-lg h-64 overflow-hidden relative">
+          
+          <img
+            alt=""
+            class="object-cover object-center h-full w-full"
+            src="./networkings/topology1/topology.jpg"
+          />
+          
+          <span
+            class="bg-blue-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl"
+            >Networkings</span
+          >
+          <h2
+            class="text-white px-2 py-1 tracking-widest text-2xl leading-tight font-extrabold font-bree text-center w-full h-full flex justify-center items-center absolute top-0 left-0"
+          >
+            
+          </h2>
+          <p
+            class="text-white px-2 py-1 tracking-widest text-md leading-tight font-light w-full text-center absolute bottom-0 left-0"
+          >
+            
+          </p>
+        </div>
+      </a>
+      
+      
     </div>
   </div>
 </section>
@@ -322,7 +360,7 @@
 
 
 <script>
-  const allTypes = ["all",  "bars","lines",];
+  const allTypes = ["all",  "bars","lines","networkings",];
   const filter = (event, type) => {
     const isActive = event.target.classList.contains("active");
 
